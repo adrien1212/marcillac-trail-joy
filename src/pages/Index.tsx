@@ -108,6 +108,44 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="courses" className="py-24 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="font-display text-5xl md:text-7xl text-foreground text-center mb-4">
+            LA RANDONNEE
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+                <div
+                  key="rando"
+                  className="group relative"
+                ></div>
+
+              <a
+                key="rando"
+                href={`/randonnee`}
+                className="group relative block bg-card rounded-lg border border-border overflow-hidden hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              >
+                <div
+                  key="rando"
+                  className="group relative bg-card rounded-lg border border-border overflow-hidden hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                >
+                  <div className={`${"bg-cyan-500"} h-2`} />
+                  <div className="p-8">
+                    <h3 className="font-display text-3xl text-foreground mt-2 mb-1">
+                      Randonnée
+                    </h3>
+                    <div className="flex items-center gap-4 mb-4">
+                      <span className="font-display text-5xl text-primary">9km</span>
+                      <span className="text-muted-foreground font-body text-sm border-l border-border pl-4">
+                        200D+
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+        </div>
+      </section>
+
       {/* Infos Section */}
       <section id="infos" className="py-24 px-4 bg-card">
         <div className="container mx-auto max-w-4xl">
@@ -129,6 +167,76 @@ const Index = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="py-24 px-4 bg-card">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-center font-display text-5xl md:text-7xl text-foreground mb-12">
+            RESTAURATION SUR PLACE
+          </h2>
+
+          {/* Tarifs */}
+          <div className="text-center mb-16">
+            <p className="font-body text-xl md:text-2xl text-foreground">
+              Tarifs repas
+            </p>
+            <p className="font-body text-lg text-muted-foreground">
+              15 € / adulte · 10 € / enfant
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            
+            {/* Colonne Trail */}
+            <div className="flex flex-col items-center text-center space-y-6">
+              <h3 className="font-display text-3xl text-foreground">
+                Trail
+              </h3>
+              <p className="font-body text-lg text-muted-foreground">
+                Réservation lors de l'inscription en ligne
+              </p>
+
+              <br></br><br></br>
+
+              {/* Boutons */}
+              <div className="mt-auto flex flex-col gap-4 w-full max-w-xs">
+                <a
+                  href="/parcours"
+                  className="w-full px-6 py-3 rounded-xl bg-primary text-white font-medium hover:bg-primary/90 transition"
+                >
+                  Voir les parcours
+                </a>
+              </div>
+            </div>
+
+            {/* Colonne Randonnée */}
+            <div className="flex flex-col items-center text-center space-y-6">
+              <h3 className="font-display text-3xl text-foreground">
+                Randonnée
+              </h3>
+              <p className="font-body text-lg text-muted-foreground">
+                Réservation par email :
+              </p>
+              <a
+                href="mailto:comitedesfetesnuces12330@gmail.com"
+                className="text-primary underline hover:text-primary/80"
+              >
+                comitedesfetesnuces12330@gmail.com
+              </a>
+
+              {/* Boutons */}
+              <div className="mt-auto flex flex-col gap-4 w-full max-w-xs">
+                <a
+                  href="/randonnee"
+                  className="w-full px-6 py-3 rounded-xl border border-primary text-primary font-medium hover:bg-primary/10 transition"
+                >
+                  Voir la randonnée
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -178,6 +286,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+
 
 
 
