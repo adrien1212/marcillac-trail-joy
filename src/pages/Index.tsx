@@ -111,7 +111,7 @@ const Index = () => {
       <section id="courses" className="py-24 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="font-display text-5xl md:text-7xl text-foreground text-center mb-4">
-            LA RANDONNEE
+            LA RANDONNEE 
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
                 <div
@@ -131,8 +131,9 @@ const Index = () => {
                   <div className={`${"bg-cyan-500"} h-2`} />
                   <div className="p-8">
                     <h3 className="font-display text-3xl text-foreground mt-2 mb-1">
-                      Randonnée
+                      Randonnée (9h30)
                     </h3>
+                    <span className="text-muted-foreground font-body">Inscription sur place</span>
                     <div className="flex items-center gap-4 mb-4">
                       <span className="font-display text-5xl text-primary">9km</span>
                       <span className="text-muted-foreground font-body text-sm border-l border-border pl-4">
