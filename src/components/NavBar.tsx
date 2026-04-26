@@ -6,6 +6,7 @@ import { useState } from "react";
 const navLinks = [
   { to: "/parcours", label: "Les parcours" },
   { to: "/randonnee", label: "Randonnée" },
+  { to: "/resultats", label: "Résultats" },
   { to: "/inscription", label: "Inscription" },
   { to: "/contact", label: "Contact" },
 ];

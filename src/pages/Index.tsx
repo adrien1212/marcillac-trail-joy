@@ -62,6 +62,11 @@ const Index = () => {
           </div>
           <div className="mt-10 animate-fade-up">
             <InscriptionBtn />
+            <div className="mt-4">
+              <Button asChild variant="outline" size="lg" className="bg-background/80 backdrop-blur-sm">
+                <Link to="/resultats">Voir les résultats</Link>
+              </Button>
+            </div>
           </div>
         </div>
         <a href="#courses" className="absolute bottom-8 z-10 animate-bounce">
@@ -72,11 +77,6 @@ const Index = () => {
       {/* Races Section */}
       <section id="courses" className="py-24 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="font-display text-5xl md:text-7xl text-foreground text-center mb-4">
-            INSCRIPTIONS SUR PLACE TRAIL/RANDO POSSIBLES
-          </h2>
-          <br></br>
-          <br></br>
           <h2 className="font-display text-5xl md:text-7xl text-foreground text-center mb-4">
             LES COURSES
           </h2>
