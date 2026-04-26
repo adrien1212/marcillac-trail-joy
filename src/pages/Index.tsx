@@ -73,6 +73,11 @@ const Index = () => {
       <section id="courses" className="py-24 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="font-display text-5xl md:text-7xl text-foreground text-center mb-4">
+            INSCRIPTIONS SUR PLACE TRAIL/RANDO POSSIBLES
+          </h2>
+          <br></br>
+          <br></br>
+          <h2 className="font-display text-5xl md:text-7xl text-foreground text-center mb-4">
             LES COURSES
           </h2>
           <p className="text-muted-foreground text-center text-lg mb-16 font-body max-w-2xl mx-auto">
