@@ -11,6 +11,10 @@ const navLinks = [
   { to: "/contact", label: "Contact" },
 ];
 
+const externalLinks = [
+  { href: "https://photos.traildenuces.fr", label: "Photos" },
+];
+
 export default function NavBar() {
   const [open, setOpen] = useState(false);
 
@@ -31,6 +35,17 @@ export default function NavBar() {
               {link.label}
             </Link>
           ))}
+          {externalLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors"
+            >
+              {link.label}
+            </a>
+          ))}
         </div>
 
         {/* Mobile hamburger */}
@@ -50,6 +65,18 @@ export default function NavBar() {
                 >
                   {link.label}
                 </Link>
+              ))}
+              {externalLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setOpen(false)}
+                  className="text-foreground hover:text-primary transition-colors py-2"
+                >
+                  {link.label}
+                </a>
               ))}
             </div>
           </SheetContent>

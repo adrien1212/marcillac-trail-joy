@@ -67,6 +67,11 @@ const Index = () => {
                 <Link to="/resultats">Voir les résultats</Link>
               </Button>
             </div>
+            <div className="mt-4">
+              <Button asChild variant="outline" size="lg" className="bg-background/80 backdrop-blur-sm">
+                <Link to="https://photos.traildenuces.fr">Voir les photos</Link>
+              </Button>
+            </div>
           </div>
         </div>
         <a href="#courses" className="absolute bottom-8 z-10 animate-bounce">
